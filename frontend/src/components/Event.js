@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 function EventForm() {
   const [event, setEvent] = useState("Do Gym");
-  const [start, setStart] = useState(""); // Format: 2025-08-01T14:30
+  const [start, setStart] = useState("");
   const [period, setPeriod] = useState("daily");
   const navigate = useNavigate();
 
