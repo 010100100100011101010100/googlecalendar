@@ -4,8 +4,8 @@ const { google } = require('googleapis');
 const session = require('express-session');
 const dotenv = require('dotenv');
 dotenv.config();
-// const clientID = process.env.CLIENT_ID;
-// const clientSecret = process.env.CLIENT_SECRET;
+const clientID = process.env.CLIENT_ID;
+const clientSecret = process.env.CLIENT_SECRET;
 const redirectURI = 'http://localhost:3000/callback';
 
 const oauth2Client = new google.auth.OAuth2(
